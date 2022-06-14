@@ -1,0 +1,15 @@
+.posts-container{
+    width: 75%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+}
+
+@media screen and (max-width: 800px) {
+    .posts-container{
+        width: 98%;
+    }
+}
+

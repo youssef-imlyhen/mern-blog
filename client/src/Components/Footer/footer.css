@@ -1,0 +1,11 @@
+.footer-sec{
+    height: 80px;
+}
+.footer-container{
+    background-color: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}

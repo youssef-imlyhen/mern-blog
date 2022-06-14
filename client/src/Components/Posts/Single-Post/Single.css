@@ -1,0 +1,74 @@
+
+
+.post-container{
+    margin-top: 20rem;
+    width: 70%;
+    margin: auto;
+    text-overflow:clip ;
+    font-family: sans-serif;
+    word-spacing: 0.0.5rem;
+    letter-spacing: 0.05rem;
+    transition: all 2s ease-in-out;
+    line-height: 1.5rem;
+}
+
+.tag{
+    margin-right: 1rem;
+    color: lightseagreen;
+    text-decoration: underline;
+}
+.post-title{
+    margin: 1rem 0;
+    font-size: 3rem;
+    line-height: 3.2rem;
+}
+.des{
+    color: #444;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.author-sec{
+    width: 10rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.author-avatar{
+    width: 3rem;
+    height: 3rem;
+    background-color: #F1a;
+    border-radius: 50%;
+}
+.author-text{
+    margin-left: .5rem;
+    line-height: 1.1rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.heading{
+    margin: 1.5rem 0;
+}
+
+@media screen and (max-width: 800px){
+    .post-container{
+        width: 90%;
+        /* background-color: tomato; */
+    }
+}
+
+@keyframes text{
+    from{
+    line-height: 0.1rem;
+    }
+    to{
+    line-height: normal;
+    }
+}

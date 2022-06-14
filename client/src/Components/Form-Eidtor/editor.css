@@ -1,0 +1,144 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+    margin: 0;
+}
+.save-post{
+    top: 5rem;
+    position: sticky;
+    margin-bottom: 1rem;
+    border: 1px  solid #fd6b17;
+    width: 6em;
+    height: 3rem;
+    color: #fd6b17;
+    z-index: 10;
+    font-size: 1rem;
+    font-family: sans-serif;
+    background-color: inherit;
+    left: 48%;
+    border-radius: 5%;
+    font-weight: 700;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.save-post:hover{
+    background-color: #fd6b17;
+    color: white;
+}
+.form-inputs{
+    height: 60rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 40rem; */
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.editor-title{
+    color: #fd6b17;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+.post-label{
+    color: #fd6b17;
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.post-label::after{
+    content: "";
+    width: 3rem;
+    height: 0.3rem;
+    background-color: #fd6b17;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    border-radius: 15%;
+}
+.l-a-i-couple{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.lab-and-inp{
+    display: flex;
+    flex-direction: column;
+}
+
+.lab-and-inp > textarea{
+    font-size: 1rem;
+    font-family: monospace;
+    height: 7rem;
+    border: 1px  solid #fd6b17;
+    width: 20rem;
+    margin-top: 0.3rem;
+    outline: currentColor;
+}
+/* 
+.editor{
+
+} */
+
+.editor .ql-editor {
+    width: 8.5in;
+    min-height: 11in;
+    padding: 1in;
+    margin: 1rem;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+    background-color: white;
+}
+
+.editor .ql-container.ql-snow {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.editor .ql-toolbar.ql-snow {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #f3f3f3;
+    border: none;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+}
+
+@page {
+    margin: 1in;
+}
+@media only screen and (max-width: 800px) {
+    .l-a-i-couple{
+        width: 90%;
+    }
+    .lab-and-inp > textarea{
+        width: 15rem;
+    }
+}
+
+@media print {
+    body {
+        background: none;
+    }
+
+    .container .ql-editor {
+        width: 6.5in;
+        height: 9in;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+        align-self: flex-start;
+    }
+
+    .container .ql-toolbar.ql-snow {
+        display: none;
+    }
+}
