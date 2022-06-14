@@ -3,6 +3,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
+import 'dotenv/config';
 
 import postRoutes from './routes/posts.js';
 import userRouter from "./routes/user.js";
@@ -16,9 +17,7 @@ app.use(cors());
 app.use('/posts', postRoutes);
 app.use("/user", userRouter);
 
-const CONNECTION_URL = "mongodb+srv://usf:usf@cluster0.rjozu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-// "mongodb+srv://usf:usf@cluster0.rjozu.mongodb.net/mern_blog?retryWrites=true&w=majority";
-// "mongodb+srv://usf:<password>@cluster0.rjozu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const CONNECTION_URL = process.env.CONNECTION_URL;
 
 
 
